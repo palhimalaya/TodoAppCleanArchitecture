@@ -1,0 +1,39 @@
+# Build output
+bin/
+obj/
+
+# .NET user-specific files
+*.user
+*.suo
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+
+# dotnet publish output
+publish/
+out/
+
+# Entity Framework migrations snapshots (keep if you track migrations)
+# *.Designer.cs
+
+# Secrets & environment overrides
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
