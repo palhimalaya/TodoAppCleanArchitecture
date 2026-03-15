@@ -17,6 +17,43 @@ It uses:
 - `TodoApp.Domain` - core domain entities
 - `TodoApp.Repository` - EF Core persistence and repository implementation
 
+## Packages and References
+
+### Project References
+
+```bash
+dotnet add TodoApp.Application reference TodoApp.Domain
+dotnet add TodoApp.Repository reference TodoApp.Application
+dotnet add TodoApp.API reference TodoApp.Application
+dotnet add TodoApp.API reference TodoApp.Repository
+```
+
+### Package References
+
+`TodoApp.API`
+
+```bash
+dotnet add TodoApp.API package Microsoft.AspNetCore.OpenApi --version 10.0.4
+dotnet add TodoApp.API package Microsoft.EntityFrameworkCore.Design --version 10.0.5
+dotnet add TodoApp.API package Swashbuckle.AspNetCore --version 10.1.5
+```
+
+`TodoApp.Application`
+
+```bash
+dotnet add TodoApp.Application package Microsoft.Extensions.DependencyInjection --version 10.0.5
+```
+
+`TodoApp.Repository`
+
+```bash
+dotnet add TodoApp.Repository package Microsoft.EntityFrameworkCore --version 10.0.5
+dotnet add TodoApp.Repository package Microsoft.EntityFrameworkCore.Design --version 10.0.5
+dotnet add TodoApp.Repository package Microsoft.EntityFrameworkCore.Tools --version 10.0.5
+dotnet add TodoApp.Repository package Microsoft.Extensions.DependencyInjection --version 10.0.5
+dotnet add TodoApp.Repository package Npgsql.EntityFrameworkCore.PostgreSQL --version 10.0.1
+```
+
 ## Features
 
 - Create a todo item
