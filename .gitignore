@@ -29,7 +29,7 @@ out/
 # Secrets & environment overrides
 appsettings.*.json
 !appsettings.json
-!appsettings.Development.json
+!appsettings.Development.example.json
 
 # OS files
 .DS_Store
